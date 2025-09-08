@@ -1,0 +1,42 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment and package files
+.env
+.venv/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Model and data files
+models/*.pt
+models/*.pkl
+data/
+
+# Logs
+*.log
+
+# Installer scripts
+install.bat
+install.sh
+
+# Ignore deployment and quick start guides
+DEPLOYMENT_GUIDE.md
+QUICK_START.md
+
+# Ignore test outputs
+*.out
+
+# Ignore other temp files
+*.tmp
+*.bak
