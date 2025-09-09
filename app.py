@@ -1,5 +1,4 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import uvicorn
 import os
@@ -18,14 +17,6 @@ import joblib
 import glob
 
 app = FastAPI(title="Shelf Product Identifier API", version="1.0.0")
-# Add CORS middleware to allow requests from any origin
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins; for security, specify allowed origins in production
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Global variables for models
 yolo_model = None

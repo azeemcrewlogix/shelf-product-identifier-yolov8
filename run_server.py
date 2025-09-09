@@ -20,9 +20,9 @@ def main():
     print("🚀 Starting Shelf Product Identifier API Server")
     print("="*50)
     print("Server will be available at:")
-    print("  - API: http://localhost:8000")
-    print("  - Docs: http://localhost:8000/docs")
-    print("  - Health: http://localhost:8000/health")
+    print("  - API: http://localhost:3000")
+    print("  - Docs: http://localhost:3000/docs")
+    print("  - Health: http://localhost:3000/health")
     print("="*50)
     print("Press Ctrl+C to stop the server")
     print()
@@ -32,7 +32,7 @@ def main():
         uvicorn.run(
             "app:app",
             host="0.0.0.0",
-            port=8000,
+            port=3000,
             reload=False,  # Set to True for development
             log_level="info"
         )
